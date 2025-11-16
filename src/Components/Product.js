@@ -50,7 +50,7 @@ const products = [
     category: "Marine Calibration",
     title: "Portable Gas Detectors",
     description: "Supply and calibration of portable gas detection devices.",
-    image: "/img-.jpg",
+    image: "/img-7.jpg",
   },
   {
     category: "Marine Calibration",
