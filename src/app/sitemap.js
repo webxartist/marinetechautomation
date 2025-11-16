@@ -5,26 +5,36 @@ export default function sitemap() {
     {
       url: `${baseUrl}/`,
       lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 1.0,
     },
     {
-      url: `${baseUrl}/about`,
+      url: `${baseUrl}/About`,
       lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
     },
     {
-      url: `${baseUrl}/services`,
+      url: `${baseUrl}/Services`,
       lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
     },
     {
-      url: `${baseUrl}/contact`,
+      url: `${baseUrl}/Contact`,
       lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
+    },
+
+    // New Pages Added ↓↓↓
+    {
+      url: `${baseUrl}/Calibration`,
+      lastModified: new Date(),
+    },
+    {
+      url: `${baseUrl}/Instrumentation`,
+      lastModified: new Date(),
+    },
+    {
+      url: `${baseUrl}/Automation`,
+      lastModified: new Date(),
+    },
+    {
+      url: `${baseUrl}/Electrical`,
+      lastModified: new Date(),
     },
   ];
 }
