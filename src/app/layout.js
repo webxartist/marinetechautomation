@@ -17,11 +17,19 @@ export const metadata = {
   title: "Marine Tech Automation",
   description:
     "Powering marine innovation through advanced automation, calibration, and navigation systems.",
+  alternates: {
+    canonical: "https://marinetechautomation.in/",
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        {/* Canonical tag for SEO */}
+        <link rel="canonical" href="https://marinetechautomation.in/" />
+      </head>
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
