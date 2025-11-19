@@ -6,143 +6,144 @@ import { useState, useMemo } from "react";
 const products = [
   // ⚙️ Marine Automation
   {
-    category: "Marine Automation",
-    title: "Boiler Repair",
-    description: "Expert repair and automation of marine boiler systems.",
-    image: "/img-1.jpg",
-  },
-  {
-    category: "Marine Automation",
-    title: "PCB Repair",
-    description:
-      "Professional PCB-level repair for automation and control boards.",
-    image: "/img-2.jpeg",
-  },
-  {
-    category: "Marine Automation",
-    title: "Main Engine Repair",
-    description:
-      "Inspection and complete repair of marine main engines and control units.",
-    image: "/img-3.jpg",
-  },
-  {
-    category: "Marine Automation",
-    title: "Generator Repair",
-    description: "Servicing, overhauling, and part replacement for generators.",
-    image: "/img4.jpg",
-  },
-  {
-    category: "Marine Automation",
-    title: "PLC Retrofit",
-    description:
-      "Upgradation and reprogramming of PLC systems for enhanced automation.",
-    image: "/img5.jpg",
-  },
+    category: " Engine Room Automation",
+    title: "ME Governor Control",
 
-  // 🧰 Marine Calibration
-  {
-    category: "Marine Calibration",
-    title: "UTI Meter",
-    description: "Calibration and maintenance of UTI meters for accuracy.",
-    image: "/img31.jpg",
+    image: "/Governor.jpg",
   },
   {
-    category: "Marine Calibration",
-    title: "Portable Gas Detectors",
-    description: "Supply and calibration of portable gas detection devices.",
-    image: "/img-7.jpg",
+    category: " Engine Room Automation",
+    title: "Fuel Oil System",
+    image: "/Fuel.jpg",
   },
   {
-    category: "Marine Calibration",
+    category: " Engine Room Automation",
+    title: "L.o. Pressure Control & Alarms",
+    image: "/Lopressure.jpg",
+  },
+  {
+    category: " Engine Room Automation",
+    title: "Jacket Cooling Water Control",
+
+    image: "/Jacket.jpg",
+  },
+  {
+    category: " Engine Room Automation",
+    title: "Scavenge Air Monitoring",
+    image: "/Scavenge.jpg",
+  },
+  // 🧰 . Alarm & Monitoring Systems
+  {
+    category: "Alarm & Monitoring Systems",
+    title: "Tank Overfill Alarm",
+    image: "/Tank.jpg",
+  },
+  {
+    category: "Alarm & Monitoring Systems",
+    title: "Pressure",
+    image: "/Pressure.jpg",
+  },
+  {
+    category: "Alarm & Monitoring Systems",
+    title: "Temprature",
+    image: "/Temprature.jpg",
+  },
+  {
+    category: "Alarm & Monitoring Systems",
+    title: "Level",
+    image: "/Level.jpg",
+  },
+  // 🧰 . Navigation Automation
+  {
+    category: " Navigation Automation",
     title: "ODME Systems",
     description:
       "Oil discharge monitoring systems supply and annual calibration.",
     image: "/IMG-8.jpg",
   },
   {
-    category: "Marine Calibration",
+    category: " Navigation Automation",
     title: "Fixed Gas Detectors",
     description: "Installation and maintenance of fixed gas detection systems.",
     image: "/img-9.jpg",
   },
+
+  //Cargo Control Systems (Tanker / Bulk / LNG)
   {
-    category: "Marine Calibration",
-    title: "IG O2 Analyzers",
-    description: "Calibration and maintenance of inert gas oxygen analyzers.",
-    image: "/img10.jpg",
+    category: "Cargo Control Systems (Tanker / Bulk / LNG)",
+    title: "Cargo Tank Monitoring System",
+    image: "/Cargo.jpg",
   },
   {
-    category: "Marine Calibration",
-    title: "Flow Meters",
-    description: "Calibration and repair of marine flow meter systems.",
-    image: "/img-11.jpg",
+    category: "Cargo Control Systems (Tanker / Bulk / LNG)",
+    title: "Invert Gas Genrator",
+    image: "/Invert.jpg",
+  },
+  // Safety Systems
+  {
+    category: " Safety Systems",
+    title: "Fire Detection System",
+    image: "/fire.jpg",
   },
   {
-    category: "Marine Calibration",
-    title: "Life Saving Appliances",
-    description: "Inspection and calibration of LSA devices onboard ships.",
-    image: "/img-12.jpg",
-  },
-  {
-    category: "Marine Calibration",
+    category: " Safety Systems",
     title: "Multimeter",
     description:
       "Marine-grade multimeters for diagnostics and calibration tasks.",
     image: "/img-13.jpg",
   },
+  //. Power Management System (PMS)
   {
-    category: "Marine Calibration",
+    category: "Power Management System (PMS)",
     title: "15ppm Bilge Alarm Monitor",
     description:
       "Supply and servicing of 15ppm bilge alarm monitoring systems.",
     image: "/img-14.jpg",
   },
-
-  // 🧭 Ship Navigation
   {
-    category: "Ship Navigation",
+    category: "Power Management System (PMS)",
     title: "Electronic Navigation",
     description: "Installation and inspection of radar and navigation systems.",
     image: "/img-15.jpg",
   },
+  // Communication & Control Networks
   {
-    category: "Ship Navigation",
-    title: "Cranes Repair",
+    category: " Communication & Control Networks",
+    title: "PCB",
     description:
       "Hydraulic and electrical crane inspection and repair services.",
     image: "/img-16.jpg",
   },
 
-  // ⚙️ Ship Spares
   {
-    category: "Ship Spares",
+    category: " Communication & Control Networks",
     title: "Oil Mist Detector",
     description: "Maintenance and calibration of oil mist detection systems.",
     image: "/img-17.png",
   },
+  // Specialized Engine Room Automation
   {
-    category: "Ship Spares",
+    category: " Specialized Engine Room Automation",
     title: "Alarm Monitoring Panel",
     description: "Repair and testing of alarm monitoring control panels.",
     image: "/img-18.png",
   },
   {
-    category: "Ship Spares",
+    category: " Specialized Engine Room Automation",
     title: "Generator Controller",
     description: "Supply, installation, and testing of generator controllers.",
     image: "/img-19.png",
   },
 
-  // 🛟 Marine Safety (LSA / FFA)
   {
-    category: "Marine Safety - LSA / FFA",
+    category: " Specialized Engine Room Automation",
     title: "Fire Fighting Systems",
     description:
       "Annual inspection and refilling of firefighting equipment onboard.",
     image: "/img-20.jpg",
   },
   {
-    category: "Marine Safety - LSA / FFA",
+    category: " Specialized Engine Room Automation",
     title: "Life Saving Appliances",
     description:
       "Inspection and maintenance of life jackets, lifeboats, and rescue boats.",
@@ -211,7 +212,7 @@ const Products = () => {
               <img
                 src={product.image}
                 alt={product.title}
-                className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-500 ease-out"
+                className="object-fill w-full h-full transform group-hover:scale-105 transition-transform duration-500 ease-out"
                 loading="lazy"
               />
               <a

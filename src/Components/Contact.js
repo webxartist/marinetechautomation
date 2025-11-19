@@ -84,15 +84,17 @@ const Contact = () => {
               SEEPZ Gate, Gufic CMPND, Mumbai - 400093, India
             </ContactInfoItem>
             <ContactInfoItem icon={FaPhoneAlt}>+91 98192 34848</ContactInfoItem>
-            <ContactInfoItem icon={FaPhoneAlt}>+91 22 40100662</ContactInfoItem>
+            <ContactInfoItem icon={FaPhoneAlt}>
+              +91 22 4607 6496
+            </ContactInfoItem>
             <ContactInfoItem icon={FaEnvelope}>
               arun@marinetechautomation.com
             </ContactInfoItem>
             <ContactInfoItem icon={FaEnvelope}>
-              services@marinetechautomation.com
+              services@marinetechautomation.in
             </ContactInfoItem>
             <ContactInfoItem icon={FaGlobe}>
-              www.marinetechautomation.com
+              www.marinetechautomation.com www.marinetechautomation.in
             </ContactInfoItem>
 
             <div className="mt-6">

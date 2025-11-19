@@ -104,7 +104,7 @@ const Footer = () => {
             <li className="flex items-center gap-3">
               <FaPhoneAlt className="text-blue-400" />
               <Link
-                href="tel:+912240100662"
+                href="tel:+91 22 4607 6496"
                 className="hover:text-blue-400 transition-colors"
               >
                 +91 22 40100662
@@ -116,7 +116,7 @@ const Footer = () => {
                 href="mailto:services@marinetechautomation.com"
                 className="hover:text-blue-400 transition-colors"
               >
-                services@marinetechautomation.com
+                services@marinetechautomation.in
               </Link>
             </li>
           </ul>

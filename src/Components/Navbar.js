@@ -33,6 +33,7 @@ const Navbar = () => {
             href="/"
             className="text-xl lg:text-3xl font-bold tracking-wide select-none flex items-center gap-1"
           >
+            <img src="/logo.png" alt="" height={60} width={60} />
             <span className="text-[#00d8ff] drop-shadow-lg">Marine</span>
             <span className="text-white">Tech Automation</span>
           </Link>
