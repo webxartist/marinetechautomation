@@ -50,7 +50,7 @@ const products = [
   },
   {
     category: "Alarm & Monitoring Systems",
-    title: "Level",
+    title: "Water Level",
     image: "/Level.jpg",
   },
   // 🧰 . Navigation Automation
