@@ -97,8 +97,8 @@ const Footer = () => {
             <li className="flex items-start gap-3">
               <FaMapMarkerAlt className="text-blue-400 mt-1" />
               <span>
-                204, AAR PEE CENTRE, CTS - 70, MIDC RD NO - 11, ANDHERI EAST,
-                Opp. SEEPZ Gate, Gufic Compound, Mumbai - 400093, India
+                D-133, Ansa Industrial estate, Saki-Vihar Road, Andheri-East,
+                Mumbai-400072, Maharashtra, India
               </span>
             </li>
             <li className="flex items-center gap-3">

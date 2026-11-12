@@ -40,7 +40,7 @@ const Contact = () => {
     const text = `Hello, I am *${name}*.\nMy email: ${email}\n\n${message}`;
     window.open(
       `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`,
-      "_blank"
+      "_blank",
     );
   };
 
@@ -80,8 +80,8 @@ const Contact = () => {
 
           <div className="space-y-5">
             <ContactInfoItem icon={FaMapMarkerAlt}>
-              204, AAR PEE CENTRE, CTS - 70, MIDC RD NO - 11, Andheri East, Opp.
-              SEEPZ Gate, Gufic CMPND, Mumbai - 400093, India
+              D-133, Ansa Industrial estate, Saki-Vihar Road, Andheri-East,
+              Mumbai-400072, Maharashtra, India
             </ContactInfoItem>
             <ContactInfoItem icon={FaPhoneAlt}>+91 98192 34848</ContactInfoItem>
             <ContactInfoItem icon={FaPhoneAlt}>
@@ -144,7 +144,7 @@ const Contact = () => {
                   required
                   className="w-full p-3 rounded-lg bg-[#002b4d]/40 border border-[#00d8ff40] focus:border-[#00d8ff] outline-none text-gray-200 placeholder-gray-400 resize-none"
                 />
-              )
+              ),
             )}
             <button
               type="submit"
