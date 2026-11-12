@@ -81,7 +81,7 @@ const Contact = () => {
           <div className="space-y-5">
             <ContactInfoItem icon={FaMapMarkerAlt}>
               D-133, Ansa Industrial estate, Saki-Vihar Road, Andheri-East,
-              Mumbai-400072, Maharashtra India.
+              Mumbai-400072, Maharashtra India
             </ContactInfoItem>
             <ContactInfoItem icon={FaPhoneAlt}>+91 98192 34848</ContactInfoItem>
             <ContactInfoItem icon={FaPhoneAlt}>
